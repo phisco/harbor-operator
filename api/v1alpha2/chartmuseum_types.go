@@ -66,7 +66,6 @@ type ChartMuseumSpec struct {
 	PublicURL string `json:"publicURL"`
 }
 
-// nolint:gochecknoinits
-func init() {
+func init() { // nolint:gochecknoinits
 	SchemeBuilder.Register(&ChartMuseum{}, &ChartMuseumList{})
 }
