@@ -14,6 +14,7 @@ import (
 // +k8s:openapi-gen=true
 // +resource:path=portal
 // +kubebuilder:subresource:status
+// +kubebuilder:resource:categories="goharbor"
 // +kubebuilder:printcolumn:name="Version",type=string,JSONPath=`.spec.version`,description="The semver Harbor version",priority=5
 // +kubebuilder:printcolumn:name="Replicas",type=string,JSONPath=`.spec.publicURL`,description="The public URL to the Harbor application",priority=0
 // +kubebuilder:printcolumn:name="Status",type=string,JSONPath=`.status.conditions[?(@.statys==true)].type`,description="The current status of the Harbor application",priority=10
